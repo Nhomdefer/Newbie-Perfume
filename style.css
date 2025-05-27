@@ -1,0 +1,156 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+main{
+      border-radius: 10px;
+}
+
+.product-card{
+   display: flex;
+   max-height: 420px;
+}
+
+h3{
+   font-family: sans-serif;
+   font-size: 1.5rem;
+   color: hsl(228, 12%, 48%);
+}
+
+.product-details{
+   background-color: white;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   width: 280px;
+   padding-left: 20px;
+}
+
+.product-image{
+   width: 270px;
+   height: 420px;
+   border-bottom-left-radius: 10px;
+   border-top-left-radius: 10px;
+}
+
+.product-title{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 2rem;
+   color: hsl(212, 21%, 14%);
+}
+
+.product-description{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 1rem;
+   color: hsl(228, 12%, 48%);
+   max-width: 220px;
+}
+
+.current-price{
+   color: hsl(158, 36%, 37%);
+   font-size: 2rem;
+}
+
+.original-price{
+   color: hsl(228, 12%, 48%);
+   font-size: 1.5rem;
+   text-decoration: line-through;
+}
+
+.add-to-cart-button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   margin-left: 50px;
+   background-color: hsl(158, 36%, 37%);
+   width: 150px;
+   height: 40px;
+   border-radius: 10px;
+
+}
+
+.add-to-cart-button a{   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   text-decoration: none;
+   background-color: hsl(158, 36%, 37%);
+   width: 150px;
+   height: 40px;
+   border-radius: 10px;
+
+}
+
+.add-to-cart-button a:hover{
+   background-color: rgb(77, 163, 131, 0.6);
+}
+
+.icon{
+   margin-right: 10px;
+}
+
+@media screen and (max-width: 520px) {
+   .product-card{
+      flex-direction: column;
+   }
+
+   .product-details{
+      width: 200px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+   }
+
+   .product-image{
+      width: 220px;      
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+   }
+
+   .product-title{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 1.6rem;
+   color: hsl(212, 21%, 14%);
+   max-width: 150px;
+   }
+
+   h3{
+   font-family: sans-serif;
+   font-size: 1.2rem;
+   color: hsl(228, 12%, 48%);
+}
+
+.product-description{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 0.8rem;
+   color: hsl(228, 12%, 48%);
+   max-width: 160px;
+}
+
+.current-price{
+   color: hsl(158, 36%, 37%);
+   font-size: 1.5rem;
+}
+
+.original-price{
+   color: hsl(228, 12%, 48%);
+   font-size: 1rem;
+   text-decoration: line-through;
+}
+
+.add-to-cart-button{
+   margin: 20px;
+   background-color: hsl(158, 36%, 37%);
+   width: 150px;
+   height: 40px;
+   border-radius: 10px;
+}
+}
